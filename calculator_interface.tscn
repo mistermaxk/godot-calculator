@@ -7,3 +7,40 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1577942472]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 64
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=228870153]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="DisplayContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer" unique_id=358312838]
+custom_minimum_size = Vector2(760, 208)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_bottom = 16
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer" unique_id=1333001840]
+custom_minimum_size = Vector2(740, 164)
+layout_mode = 2
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="ButtonContainer" type="GridContainer" parent="MarginContainer/VBoxContainer" unique_id=125067645]
+custom_minimum_size = Vector2(0, 960)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 5
