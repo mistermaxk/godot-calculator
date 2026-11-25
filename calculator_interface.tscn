@@ -15,9 +15,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 32
+theme_override_constants/margin_left = 48
 theme_override_constants/margin_top = 16
-theme_override_constants/margin_right = 32
+theme_override_constants/margin_right = 48
 theme_override_constants/margin_bottom = 64
 
 [node name="VBoxContainer" type="VBoxContainer" parent="OuterMarginContainer" unique_id=228870153]
@@ -31,16 +31,153 @@ size_flags_horizontal = 4
 theme_override_constants/margin_top = 24
 theme_override_constants/margin_bottom = 16
 
+[node name="Display" type="Label" parent="OuterMarginContainer/VBoxContainer/DisplayContainer" unique_id=1688267601]
+layout_mode = 2
+theme_override_font_sizes/font_size = 88
+text = "123456789.0012"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+text_overrun_behavior = 1
+
 [node name="LabelContainer" type="MarginContainer" parent="OuterMarginContainer/VBoxContainer" unique_id=1333001840]
-custom_minimum_size = Vector2(740, 164)
+custom_minimum_size = Vector2(700, 164)
 layout_mode = 2
 theme_override_constants/margin_top = 32
 theme_override_constants/margin_bottom = 32
+
+[node name="Label" type="Label" parent="OuterMarginContainer/VBoxContainer/LabelContainer" unique_id=2033211840]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "MXKK  | Godot Calculator | 2026 v4"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ButtonContainer" type="GridContainer" parent="OuterMarginContainer/VBoxContainer" unique_id=125067645]
 custom_minimum_size = Vector2(0, 960)
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_constants/h_separation = 16
-theme_override_constants/v_separation = 16
-columns = 5
+theme_override_constants/h_separation = 32
+theme_override_constants/v_separation = 32
+columns = 4
+
+[node name="ACBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=1439424498]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "AC
+"
+
+[node name="DelBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=1569212946]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "⌫"
+
+[node name="SqRtBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=2074799716]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "√"
+
+[node name="DivBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=416033005]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "÷"
+
+[node name="SevenBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=71536784]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "7"
+
+[node name="EightBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=73349849]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "8"
+
+[node name="NineBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=710524512]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "9"
+
+[node name="MultBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=1608838647]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="FourBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=818653867]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "4"
+
+[node name="FiveBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=159103872]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "5"
+
+[node name="SixBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=1238925676]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "6"
+
+[node name="PlusBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=325991586]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "+"
+
+[node name="OneBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=1785451407]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "1"
+
+[node name="TwoBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=842856186]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "2"
+
+[node name="ThreeBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=117748050]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "3"
+
+[node name="MinusBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=1826116487]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "-"
+
+[node name="ZeroBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=1949897261]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "0"
+
+[node name="DecimalBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=968689910]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "."
+
+[node name="EqualsBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=626426740]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "="
+
+[node name="PosNegBtn" type="Button" parent="OuterMarginContainer/VBoxContainer/ButtonContainer" unique_id=1764722934]
+custom_minimum_size = Vector2(180, 180)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "+/-"
