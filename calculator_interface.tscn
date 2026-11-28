@@ -8,6 +8,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=67119067]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.36094886, 0.36094862, 0.36094865, 1)
+
 [node name="OuterMarginContainer" type="MarginContainer" parent="." unique_id=1577942472]
 layout_mode = 1
 anchors_preset = 15
@@ -25,13 +34,22 @@ layout_mode = 2
 theme_override_constants/separation = 8
 
 [node name="DisplayContainer" type="MarginContainer" parent="OuterMarginContainer/VBoxContainer" unique_id=358312838]
-custom_minimum_size = Vector2(760, 208)
+custom_minimum_size = Vector2(800, 208)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/margin_top = 24
 theme_override_constants/margin_bottom = 16
 
-[node name="Display" type="Label" parent="OuterMarginContainer/VBoxContainer/DisplayContainer" unique_id=1688267601]
+[node name="ColorRect" type="ColorRect" parent="OuterMarginContainer/VBoxContainer/DisplayContainer" unique_id=182108644]
+layout_mode = 2
+color = Color(0.18039216, 0.18039216, 0.18039216, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="OuterMarginContainer/VBoxContainer/DisplayContainer" unique_id=560944523]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_right = 16
+
+[node name="Display" type="Label" parent="OuterMarginContainer/VBoxContainer/DisplayContainer/MarginContainer" unique_id=1688267601]
 layout_mode = 2
 theme_override_font_sizes/font_size = 88
 text = "123456789.0012"
